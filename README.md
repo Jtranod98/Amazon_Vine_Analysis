@@ -1,8 +1,10 @@
 # Amazon_Vine_Analysis
 Big Data
 
+
 # Overview:
- The purpose of this analysis is to determine if paid Vine reviews make a difference in the percentage of 5-star reviews.
+
+The purpose of this analysis is to determine if paid Vine reviews make a difference in the percentage of 5-star reviews.  In this excercise I used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, I also used PySpark to determine if there is any bias toward favorable reviews from Vine members in the dataset. 
 
 # Results:
 
@@ -12,7 +14,4 @@ Big Data
 
 # Summary:
 
-There seems to be no bias in Vine reviews.  My conclusion is based on the percentage of 5-star reviews. The unpaid non-Vine reviews were much larger than the paid Vine reviews. Therefore, paid Vine reviews did not make a difference in the percentage of 5-star reviews.
-
-To make this conclusion stronger I would recommend doing a t-test analysis. Are two groups statistically different?
-An additional analysis is recommended to support the statement (2 pt)
+Based on the percentage of 5-stars reviews, there seems to be no bias in Vine reviews.  The non-Vine reviews were much larger than the Vine reviews.  However, to make a conclusion using the percentage value alone might not be accurate.  To ensure that results are interpreted correctly, I would recommend using additional scientific method such as a t-test analysis.  In this case, I would use the two samples t-test, because I want to compare the difference between the two groups to see if it is statistically significant.
