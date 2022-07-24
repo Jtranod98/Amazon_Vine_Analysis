@@ -1,6 +1,5 @@
 # Amazon_Vine_Analysis
-Big Data
-
+Big Data, PySpark, AWS, RDS, pgAdmin, Colab.
 
 # Overview:
 
